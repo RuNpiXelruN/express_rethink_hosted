@@ -20,6 +20,10 @@
     "jwt-simple": "^0.5.0",
     "moment": "^2.14.1",
     "morgan": "^1.7.0",
-    "rethinkdb": "^2.3.2"
+    "rethinkdb": "^2.3.2",
+    "thinky": "^2.3.4"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2"
   }
 }
