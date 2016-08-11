@@ -1,9 +1,16 @@
 const express = require('express')
 const router = express.Router()
 
+const thinky = require('thinky')()
+const r = thinky.r
+
 // GET request to /login
 router.get('/', function(req, res, next) {
-    res.send("This is the users page")
+    r.db('mf_users').table('users')
+      .run().then((users) => {
+        console.log(users)
+        res.json(users)
+      })
 })
 
 // POST request to /login

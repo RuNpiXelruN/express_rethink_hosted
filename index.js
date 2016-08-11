@@ -17,19 +17,19 @@ app.use(helmet())
 
 const users = require('./routes/users')
 const login = require('./routes/login')
-const test = require('./routes/test')
+const tests = require('./routes/test')
+const posts = require('./routes/posts')
 
 app.use('/users', users)
 app.use('/login', login)
-app.use('/test', test)
+app.use('/tests', tests)
+app.use('/posts', posts)
 
 app.get('/', function(request, response) {
   response.send("Heyyy")
 })
 
-
-
-// --------------------------------------------- Routes
+// --------------------------------------------- Routes />
 
 app.use((error, request, response, next) => {
   response.status(error.status || 500)
@@ -40,5 +40,5 @@ const server = app.listen(3000, () => {
   const host = server.address().address
   const port = server.address().port
 
-  console.log(`App listening on ${host}/${port}`)
+  console.log(`App listening on http://localhost:${port}`)
 })
