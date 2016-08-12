@@ -36,7 +36,7 @@ app.use((error, request, response, next) => {
   response.json({ error: error.message })
 })
 
-const server = app.listen(3000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   const host = server.address().address
   const port = server.address().port
 
