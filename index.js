@@ -21,9 +21,9 @@ const tests = require('./routes/test')
 const posts = require('./routes/posts')
 
 app.use('/users', users)
-app.use('/login', login)
-app.use('/tests', tests)
-app.use('/posts', posts)
+// app.use('/login', login)
+// app.use('/tests', tests)
+// app.use('/posts', posts)
 
 app.get('/', function(request, response) {
   response.send("Heyyy")
@@ -40,5 +40,5 @@ const server = app.listen(3000, () => {
   const host = server.address().address
   const port = server.address().port
 
-  console.log(`App listening on http://localhost:${port}`)
+  console.log('App running..')
 })
