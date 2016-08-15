@@ -7,15 +7,29 @@ const config = require('../config.js')
 const thinky = require('thinky')(config.connection)
 const r = thinky.r
 
+// router.get('/', (req, res) => {
+//   r.db('Users').table('User')
+//     .run().then((users) => {
+//       console.log('Users: ', users)
+//       res.json(users)
+//     })
+// })
+
+
 router.get('/', (req, res) => {
-  r.db('Users').table('User')
-    .run().then((users) => {
-      console.log('Users: ', users)
-      res.json(users)
-    })
+  r.db('Users').table('User').limit(2).run()
+  .then((users) => {
+    res.json(users)
+  })
 })
 
+// GET /users/:id
+// router.get('/:id', (req, res) => {
+//   r.db('Users').table('User')
+// })
+
 module.exports = router
+
 // const express = require('express')
 // const router = express.Router()
 //
