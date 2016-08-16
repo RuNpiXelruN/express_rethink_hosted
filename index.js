@@ -22,8 +22,9 @@ const posts = require('./routes/posts')
 
 app.use('/users', users)
 // app.use('/login', login)
-// app.use('/tests', tests)
+// app.use('/test', tests)
 // app.use('/posts', posts)
+
 
 app.get('/', function(request, response) {
   response.send("Heyyy")

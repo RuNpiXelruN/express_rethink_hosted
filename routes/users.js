@@ -7,45 +7,41 @@ const config = require('../config.js')
 const thinky = require('thinky')(config.connection)
 const r = thinky.r
 
-// router.get('/', (req, res) => {
-//   r.db('Users').table('User')
-//     .run().then((users) => {
-//       console.log('Users: ', users)
-//       res.json(users)
-//     })
-// })
-
-
 router.get('/', (req, res) => {
-  r.db('Users').table('User').limit(2).run()
+  r.db('Users').table('User').run()
   .then((users) => {
     res.json(users)
   })
 })
 
-// GET /users/:id
-// router.get('/:id', (req, res) => {
-//   r.db('Users').table('User')
+function getUsers(res) {
+  r.db('Users').table('User').limit(4)
+  .run()
+  .then((users) => {
+    const x = users
+    console.log(x.constructor)
+    res.json(users)
+  })
+}
+
+router.get('/random', (req, res) => {
+  getUsers(res)
+})
+
+// -----------  to be called from an app externally ------------- //
+
+// function callUsers() {
+//   return rp('http://localhost:3000/users/random').then(response => {
+//     return response
+//   })
+// }
+//
+// callUsers().then((users) => {
+//   var usersObject = JSON.parse(users)
+//   var cleaners = usersObject.map(user => {
+//     return user.name
+//   })
+//   console.log(cleaners.join(', '))
 // })
 
 module.exports = router
-
-// const express = require('express')
-// const router = express.Router()
-//
-// const thinky = require('thinky')()
-// const r = thinky.r
-//
-// // GET request to /login
-// router.get('/', function(req, res, next) {
-//     r.db('mf_users').table('users')
-//       .run().then((users) => {
-//         console.log(users)
-//         res.json(users)
-//       })
-// })
-//
-// // POST request to /login
-// router.post('/', function(req, res, next) {
-//     // do something
-// })

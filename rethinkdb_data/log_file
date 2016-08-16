@@ -1588,3 +1588,31 @@
 2016-08-11T15:34:25.325303000 2.351460s info: Table 2c116352-aa36-4ce5-ab22-3aa63d702596: This server is Raft leader for term 7. Latest log index is 19.
 2016-08-11T15:34:25.420600000 2.446757s info: Table a128e2e9-35fb-4be0-a570-e866108d3406: Starting a new Raft election for term 4.
 2016-08-11T15:34:25.447605000 2.473762s info: Table a128e2e9-35fb-4be0-a570-e866108d3406: This server is Raft leader for term 4. Latest log index is 9.
+2016-08-15T15:06:40.741943000 0.090153s notice: Recursively removing directory /Users/justindavidson/apps/mentallyFriendly/express_rethink_hosted/rethinkdb_data/tmp
+2016-08-15T15:06:40.746735000 0.094947s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.29))...
+2016-08-15T15:06:40.784864000 0.133073s notice: Running on Darwin 14.5.0 x86_64
+2016-08-15T15:06:40.784918000 0.133125s notice: Loading data from directory /Users/justindavidson/apps/mentallyFriendly/express_rethink_hosted/rethinkdb_data
+2016-08-15T15:06:40.883805000 0.232013s info: Automatically using cache size of 100 MB
+2016-08-15T15:06:40.883832000 0.232039s warn: Cache size does not leave much memory for server and query overhead (available memory: 503 MB).
+2016-08-15T15:06:40.883840000 0.232047s warn: Cache size is very low and may impact performance.
+2016-08-15T15:06:40.885910000 0.234117s notice: Listening for intracluster connections on port 29015
+2016-08-15T15:06:40.977840000 0.326047s notice: Listening for client driver connections on port 28015
+2016-08-15T15:06:40.978035000 0.326243s notice: Listening for administrative HTTP connections on port 8080
+2016-08-15T15:06:40.978040000 0.326247s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-08-15T15:06:40.978043000 0.326250s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-08-15T15:06:40.978211000 0.326418s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-08-15T15:06:40.978215000 0.326422s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-08-15T15:06:40.978219000 0.326426s notice: Server ready, "Justin_MF" c47986f7-1b6c-4258-ac2d-e2d0e41d6b59
+2016-08-15T15:06:42.009885000 1.358037s info: Table 34756166-8bf8-449e-b019-810caa488307: Starting a new Raft election for term 10.
+2016-08-15T15:06:42.019406000 1.367558s info: Table 34756166-8bf8-449e-b019-810caa488307: This server is Raft leader for term 10. Latest log index is 26.
+2016-08-15T15:06:42.052734000 1.400886s info: Table a128e2e9-35fb-4be0-a570-e866108d3406: Starting a new Raft election for term 5.
+2016-08-15T15:06:42.062554000 1.410706s info: Table a128e2e9-35fb-4be0-a570-e866108d3406: This server is Raft leader for term 5. Latest log index is 12.
+2016-08-15T15:06:42.209887000 1.558039s info: Table 2c116352-aa36-4ce5-ab22-3aa63d702596: Starting a new Raft election for term 8.
+2016-08-15T15:06:42.219368000 1.567520s info: Table 2c116352-aa36-4ce5-ab22-3aa63d702596: This server is Raft leader for term 8. Latest log index is 22.
+2016-08-15T15:06:42.783220000 2.131372s info: Table dac05e8b-4807-47cf-a94e-4bbb4dfdf782: Starting a new Raft election for term 10.
+2016-08-15T15:06:42.792655000 2.140807s info: Table dac05e8b-4807-47cf-a94e-4bbb4dfdf782: This server is Raft leader for term 10. Latest log index is 28.
+2016-08-15T15:19:12.172412000 751.497596s notice: Server got SIGINT from pid 6675, uid 501; shutting down...
+2016-08-15T15:19:12.180249000 751.505433s notice: Shutting down client connections...
+2016-08-15T15:19:12.181083000 751.506266s notice: All client connections closed.
+2016-08-15T15:19:12.181095000 751.506279s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-08-15T15:19:12.217597000 751.542781s notice: Storage engine shut down.

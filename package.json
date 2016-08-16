@@ -9,7 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "engines": {"node": "6.2.2"},
+  "engines": {
+    "node": "6.2.2"
+  },
   "dependencies": {
     "bcrypt": "^0.8.7",
     "bluebird": "^3.4.1",
@@ -21,6 +23,8 @@
     "jwt-simple": "^0.5.0",
     "moment": "^2.14.1",
     "morgan": "^1.7.0",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1",
     "rethinkdb": "^2.3.2",
     "thinky": "^2.3.4"
   },

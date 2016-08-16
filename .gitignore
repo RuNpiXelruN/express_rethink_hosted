@@ -1,6 +1,7 @@
-/node_modules
+/node_modules/
 npm-debug.log
 .DS_Store
 cert.js
 config.js
+rethinkdb_data
 /*.env
